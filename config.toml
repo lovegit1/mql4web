@@ -1,0 +1,4 @@
+baseURL = "https://www.mql4web.com/"
+languageCode = "en-us"
+title = "MQL4WEB"
+theme = "dimension"
