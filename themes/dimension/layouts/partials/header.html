@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ range .Pages }}{{ .Title | default "MQL4WEB Find Profitable Expert Advisor" }}{{ end }}</title>
+    <title>{{ range .Pages }}{{ .Title }}{{ end }}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="{{ .Description | default "MQL4WEB Find Profitable Expert Advisor" }}">
+    <meta name="description" content="{{ .Description }}">
     <meta name="twitter:card" content="summary" />
   	<meta name="twitter:title" content="{{.Title}}" />
-  	<meta name="twitter:description" content="{{ .Description | default "MQL4WEB Find Profitable Expert Advisor" }}" />
+  	<meta name="twitter:description" content="{{ .Description }}" />
     <link rel="shortcut icon" href="{{ `images/logo.png` | absURL }} " type="image/png">
 
     <link rel="stylesheet" href="{{ "assets/css/main.css" | absURL }}"/>
