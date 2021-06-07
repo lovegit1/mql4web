@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ .Params.Title | default "Title" }}</title>
+    <title>{{ .Params.Title | default "MQL4WEB Find Profitable Expert Advisor" }}</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+    <meta name="twitter:card" content="summary" />
+  	<meta name="twitter:title" content="{{.Title}}" />
+  	<meta name="twitter:description" content="{{.Description}}" />
+
     <link rel="stylesheet" href="{{ "assets/css/main.css" | absURL }}"/>
     <link rel="canonical" href="{{ .Permalink }}">
     <noscript><link rel="stylesheet" href="{{ "assets/css/noscript.css" | absURL }}"/></noscript>
     <style>
         :root{--site-background : url("{{ .Params.background | default "images/bg.jpg" | absURL }}")};
-    </style> 
+    </style>
     <!-- Include the script that enables Netlify Identity on this page. -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
