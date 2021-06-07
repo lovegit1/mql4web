@@ -1,5 +1,5 @@
 ---
-title: The Backend is FIX API-based.
+title: The Backend is FIX API-based
 date: 2021-06-07T06:11:41.322Z
 description: The Backend is FIX API-based.
 ---
